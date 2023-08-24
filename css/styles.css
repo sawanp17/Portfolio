@@ -16,3 +16,21 @@ div.Container {
     margin: auto;
     border: 3px solid #73AD21;
   }
+
+.project-container {
+    display: flex;
+    align-items: center;
+}
+
+.project-image {
+    margin-right: 20px; /* Adjust the spacing between image and info */
+}
+
+.project-info {
+    flex: 1; /* Allow the info to expand and take available space */
+}
+
+li {
+    margin-left: 20px; /* Adjust the left indentation as needed */
+    text-align: left;
+}

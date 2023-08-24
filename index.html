@@ -27,9 +27,9 @@
             <li>
                 <a href="#about">About</a>
             </li>
-            <!-- <li>
+            <li>
                 <a href="#experience">Experience</a>
-            </li> -->
+            </li>
             <li>
                 <a href="#education">Education</a>
             </li>
@@ -74,9 +74,10 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        Committed and goal-oriented computer science graduate looking to pursue a career in the software engineering domain.
+                        Committed and goal-oriented computer science UG looking to pursue a career in the software engineering domain.
                         Possess excellent knowledge in Data Structures and Algorithms, Machine Learning, Database Management, Operating
-                        Systems, Time Series Analysis, Web Development Tools and Frameworks. Ability to learn things quickly and capable of
+                        Systems, Time Series Analysis, Web Development Tools and Frameworks. Having industry experience as a 
+                        Software Engineering Intern at Multiplier Technologies. Ability to learn things quickly and capable of
                         working in a fast-paced and team-driven environment. Strong ability to communicate with clients and ability to express
                         ideas clearly and concisely. Always focused about optimizing the problems.
                     </p>
@@ -86,10 +87,25 @@
     </div>
     <!-- End #about -->
 
-    <!-- <div id="experience" class="background-alt">
+    <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
-            <div data-date="September 2015 – September 2016">
+            <div data-date="May 2023 – July 2023">
+                <h3>Multiplier Technologies Pvt. Ltd.</h3>
+                <h4>Software Engineer (Intern)</h4>
+                <p>
+                    Team: Payments <br>
+                    • Worked on the payment automation processes, majorly on Bankfiles. <br>
+                    • Worked on parsing through various XMLs and JSONs for dynamically generating these bankfiles.<br>
+                    • Used unit as well as behaviour-driven tests along with database changes for the configs accompanied by sanity check
+                    and smoke tests.<br>
+                    • Engineered the Bank Account Standardisation for several countries along with unit testing.<br>
+                    • Implemented some GraphQL queries for a new service being developed through Mappers, Fetchers and Loaders.<br>
+
+                </p>
+            </div>
+
+            <!-- <div data-date="September 2015 – September 2016">
                 <h3>Employer Name</h3>
                 <h4>Job Title</h4>
                 <p>
@@ -104,26 +120,18 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
                 </p>
             </div>
-
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div>
-        </div>
-    </div> -->
+        </div> -->
+    </div>
     <!-- End #experience -->
 
     <div id="education">
         <h2 class="heading">Education</h2>
         <div class="education-block">
-            <h3>Indian Institute of Technology, Jodhpur</h3>
+            <h3>Indian Institute of Technology (IIT), Jodhpur</h3>
             <span class="education-date">Dec 2020 - May 2024</span>
             <h4>Bachelor of Technology in Computer Science</h4>
             <p>
-                Currently a junior at IIT Jodhpur.
+                Currently a senior at IIT Jodhpur.
             </p>
         </div>
         <!-- End .education-block -->
@@ -153,110 +161,126 @@
         <div class="container">
             <div class="row">
                 <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
+                    <div class="project-container">
+                        <div class="project-image">
+                            <img src="https://3.bp.blogspot.com/-sJ-R3lx0vr0/XI_Dqe9wnKI/AAAAAAAAD6U/dvy-MISJagUPDDfcoLUQQTIeSAUkqKlawCEwYBhgL/s1600/image1.png" height="300" width="350"/>
+                        </div>
+                        <!-- End .project-image -->
+                        <div class="project-info">
+                            <h3>Flood Forecasting</h3>
+                            <p>
+                                Python, LSTM
+                                <ul>
+                                    <li>
+                                        Developed a model to predict the possibility of flood using the Godavari-Basin Data provided, which includes climatic conditions like humidity, stage level, gauge, etc.
+                                    </li>
+                                    <li>
+                                        Decomposed and visualised the time series into slope, trend, seasonality, etc. for the analysis of the time series and made spatial plots for the basin using ArcGIS after the necessary pre-processing.
+                                    </li>
+                                </ul>
+                            </p>
+                            <!-- <a href="#">View Project</a> -->
+                        </div>
                     </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Flood Forecasting</h3>
-                        <p>
-                            Python,LSTM
-                            <li>
-                                Developed a model to predict the possibility of flood using the Godavari-Basin Data provided which includes climatic
-                                conditions like humidity, stage level, gauge etc    
-                            </li>
-                            <li>
-                                Decomposed and visualised the time series into slope,trend,seasonality etc. for the analysis of the time series and made
-                                the spatial plots for the basin using ArcGIS after the necessary pre-processing.
-                            </li>
-                            
-                               
-                        </p>
-                        <!-- <a href="#">View Project</a> -->
+                </div>
+                <!-- End .project -->
+
+               
+
+
+                <div class="project shadow-large">
+                    <div class="project-container">
+                        <div class="project-image">
+                            <img src="/images/Stroke Prediction.png" height="350" width="350"/>
+                        </div>
+                        <!-- End .project-image -->
+                        <div class="project-info">
+                            <h3>Stroke Prediction</h3>
+                            <p>
+                                Keras and other ML Libraries, JavaScript, HTML, CSS
+                                <ul>
+                                    <li>
+                                        Visualised the data through various plots like count-plots, bar-plots, density distribution plots, correlation and covariance
+                                        plots etc and found out that data was highly imbalanced. Hence applied oversampling and bagging/boosting using
+                                        models like Random Forest Classifiers, XGBClassifier and LGBM Classifier.
+                                    </li>
+                                    <li>
+                                        Applied Machine Learning Classifiers like Decision Tree, Logistic Regression and Neural Network (MLP) as well to predict
+                                        if a person is prone to having stroke and deployed the same on a website.
+                                    </li>
+                                
+                                </ul>
+                                    
+                                
+                            </p>
+                            <!-- <a href="#">View Project</a> -->
+                        </div>
                     </div>
-                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+
+
+                <div class="project shadow-large">
+                    <div class="project-container">
+                        <div class="project-image">
+                            <img src="/images/Hospital Management.png" height="350" width="350"/>
+                        </div>
+                        <!-- End .project-image -->
+                        <div class="project-info">
+                            <h3>Hospital Management</h3>
+                            <p>
+                                MySQL, PHP, Apache
+                                <ul>
+                                    <li>
+                                        Developed a highly interactive hospital management web application using the agile approach of software development
+                                        which aids to manage all the records which a doctor, patient and hospital manager needs to keep.
+                                    </li>
+                                    <li>
+                                        Extensive use of database management using MySQL. Focused on query optimization and implemented various
+                                        views, triggers and procedures as well to make the web app highly automated and remove redundancies.
+                                    </li>
+                                
+                                </ul>
+                                    
+                                
+                            </p>
+                            <!-- <a href="#">View Project</a> -->
+                        </div>
+                    </div>
                 </div>
                 <!-- End .project -->
 
                 <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Stroke Prediction</h3>
-                        <p>
-                            Python,Keras and other ML Libraries, JavaScript, HTML, CSS
-                            <li>
-                                Visualised the data through various plots like count-plots, bar-plots, density distribution plots, correlation and covariance
-                                plots etc and found out that data was highly imbalanced. Hence applied oversampling and bagging/boosting using
-                                models like Random Forest Classifiers, XGBClassifier and LGBM Classifier.
-                            </li>
-                            <li>
-                                Applied Machine Learning Classifiers like Decision Tree, Logistic Regression and Neural Network (MLP) as well to predict
-                                if a person is prone to having stroke and deployed the same on a website.
-                            </li>
-                            
-                               
-                        </p>
-                        <!-- <a href="#">View Project</a> -->
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                    <div class="project shadow-large">
+                    <div class="project-container">
                         <div class="project-image">
-                            <img src="images/project.jpg" />
+                            <img src="/images/Wireless Switch.png" height="500" width="350"/>
                         </div>
                         <!-- End .project-image -->
                         <div class="project-info">
-                            <h3>Hospital Management System</h3>
+                            <h3>Wireless Switch App</h3>
                             <p>
-                                MySQL, PHP, Apache
-                                <li>
-                                    Developed a highly interactive hospital management web application using the agile approach of software development
-                                    which aids to manage all the records which a doctor, patient and hospital manager needs to keep.
-                                </li>
-                                <li>
-                                    Extensive use of database management using MySQL. Focused on query optimization and implemented various
-                                    views, triggers and procedures as well to make the web app highly automated and remove redundancies.
-                                </li>
+                                Flutter, Dart
+                                <ul>
+                                    <li>
+                                        Developed a mobile application to control home electrical appliances like lights, fans etc. through the app
+                                    </li>
+                                    <li>
+                                        Created UI for the app using flutter and integrated it with a bluetooth sensor (HC-05) connected to the arduino.
+                                    </li>
+                                    <li>
+                                        Arduino was programmed to send the signal received from bluetooth sensor to the respective appliance.
+                                    </li>
                                 
-                                   
+                                </ul>
+                                    
+                                
                             </p>
                             <!-- <a href="#">View Project</a> -->
                         </div>
-                        <!-- End .project-info -->
                     </div>
-                    <!-- End .project -->
                 </div>
-                <!-- End .project -->
-
-                        <div class="project shadow-large">
-                            <div class="project-image">
-                                <img src="images/project.jpg" />
-                            </div>
-                            <!-- End .project-image -->
-                            <div class="project-info">
-                                <h3>Implementing high level features in PintOSm</h3>
-                                <p>
-                                    PintOS, C
-                                    <li>
-                                        PintOS being a very primitive operating system and is very limited in terms of functionalities. Our aim was to implement
-                                        some user friendly features which included printf, scanf, alarm clock, weather app and many more using some APIs.
-                                    </li>
-                                    <li>
-                                        Worked with various C libraries and their dependencies to implement the respective feature.
-                                    </li>
-                                    
-                                       
-                                </p>
-                                <!-- <a href="#">View Project</a> -->
-                            </div>
-                            <!-- End .project-info -->
-                        </div>
-                        <!-- End .project -->
+                <!-- End .project -->                  
                 </div>
             </div>
         </div>
@@ -266,7 +290,13 @@
     <div id="skills">
         <h2 class="heading">Skills</h2>
         <ul>
-            
+            <li>Java</li>
+            <li>Spring</li>
+            <li>JPA and Hibernate</li>
+            <li>JUnit and Mockito</li>
+            <li>GraphQL</li>
+            <li>Cucumber</li>
+            <li>Bankfiles</li>
             <li>Python</li>
             <li>C++</li>
             <li>MySQL</li>
