@@ -12,6 +12,43 @@
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('text/courses_taken.txt')
+                .then(response => response.text())
+                .then(data => {
+                    const courses = data.split('\n').filter(course => course.trim() !== '');
+                    const ul = document.getElementById('coursesList');
+                    courses.forEach(course => {
+                        const li = document.createElement('li');
+                        li.textContent = course;
+                        ul.appendChild(li);
+                    });
+                })
+                .catch(error => console.error('Error fetching the courses:', error));
+        });
+    </script>
+    <style>
+        .heading{
+            padding: 5px;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 49%;
+            z-index: 1000; /* Ensure the header is on top of other elements */
+            background-color: #fff; /* Adjust as needed to match your design */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        body {
+            padding-top: 0px; /* Adjust this value to match the height of your header */
+        }
+    </style>
 </head>
 
 <body>
@@ -49,8 +86,8 @@
     <div id="lead">
         <div id="lead-content">
             <h1>Sawan Patel</h1>
-            <h2>Aspiring Software Engineer</h2>
-            <a href="https://drive.google.com/file/d/1LmerUOlUKXQDjAbVnDudzpM3ui5Vs6IW/view?usp=sharing" class="btn-rounded-white" target="_blank">Resume</a>
+            <h2>Software Engineer</h2>
+            <a href="https://drive.google.com/file/d/1upRycLpkZfStXWGJ06gAbbnhQnCNQBfo/view?usp=sharing" class="btn-rounded-white" target="_blank">Resume</a>
             <!-- <a href="" >Resume</a> -->
         </div>
         <!-- End #lead-content -->
@@ -74,10 +111,11 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        Committed and goal-oriented computer science UG looking to pursue a career in the software engineering domain.
+                        Committed and goal-oriented computer science graduate about to start a career in the software engineering domain.
                         Possess excellent knowledge in Data Structures and Algorithms, Machine Learning, Database Management, Operating
-                        Systems, Web Development Tools and Frameworks. Having industry experience as a 
-                        Software Engineering Intern at Multiplier Technologies. Ability to learn things quickly and capable of
+                        Systems, Web Development Tools and Frameworks. Having industry experience as a
+                        Development Intern at Commvault Systems and Software Engineering Intern at Multiplier Technologies. 
+                        Ability to learn things quickly and capable of
                         working in a fast-paced and team-driven environment. Strong ability to communicate with clients and ability to express
                         ideas clearly and concisely. Always focused about optimizing the problems.
                     </p>
@@ -90,13 +128,40 @@
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
+            <div data-date="Feb 2024 – Present">   
+                <h3><b>Commvault Systems Pvt. Ltd.</b></h3>
+                <img id="cv"  src="https://www.gartner.com/pi/vendorimages/commvault_enterprise-backup-and-recovery-software-solutions_1705984055280.jpg" height="124" width="257.5" align="right"/>
+
+                <h5><b>Team: Indexing</b></h5> 
+                <br>
+                <br>
+                <p>
+                    • I secured an Intern + Full-Time Employment (FTE) opportunity with Commvault during my institute's placement season. I opted to undertake the internship in the final semester of my B.Tech, balancing my academic responsibilities with this hands-on industry experience from February to June 2024. <br>                 
+                    • Tech-Stack: C++, Commvault Software, CVS  
+                </p>
+                <br><br>
+                <h4><b>Engineer</b></h4>
+                <p>
+                    Will start my full-time journey at Commvault in Jul 2024 :)
+                </p>
+
+                <br><br>
+
+                <h4><b>Part-Time Intern (Development)</b></h4>
+                <p>
+                    • Contributed to the indexing process of backed-up files, pivotal for efficient browsing and recovery operations. <br>
+                    • Analyzed, replicated, debugged and implemented optimized solutions for numerous modification requests (MRs), spanning
+                    various functionalities such as database locking, media-agent referencing, and moveDir functionality.    <br>
+                </p>
+            </div>
+
             <div data-date="May 2023 – July 2023">
                 
-                <h3>Multiplier Technologies Pvt. Ltd.</h3>
+                <h3><b>Multiplier Technologies Pvt. Ltd.</b></h3>
                 <img id="multiplier"  src="data:image/jpeg;base64,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" height="100" width="100" align="right"/>
 
                 <br>
-                <h4>Software Engineer (Intern)</h4>
+                <h4><b>Software Engineer (Intern)</b></h4>
                 <h5><b>Team: Payments</b> <br></h5>
                 <p>
                     Tech-Stack: Java, Spring, GraphQL, JUnit, Mockito, Cucumber, PostgreSQL, Agile Methodologies.
@@ -104,7 +169,7 @@
                     • Proficiently parsed various XMLs and JSONs to dynamically generate bankfiles.<br>
                     • Developed and executed both unit and behavior-driven tests, incorporating necessary database changes to ensure
                     configuration integrity. Conducted sanity checks and smoke tests.<br>
-                    • Revamped Bank Account Standardization procedures for more than 7 countries, complemented by thorough testing.
+                    • Revamped Bank Account Standardization procedures for more than 7 countries, complemented by thorough testing. <br>
                     • Contributed to the development of a new service by implementing GraphQL queries using Mappers, Fetchers, and Loaders.
                 </p>
             </div>
@@ -133,9 +198,12 @@
         <div class="education-block">
             <h3>Indian Institute of Technology (IIT), Jodhpur</h3>
             <span class="education-date">Dec 2020 - May 2024</span>
-            <h4>Bachelor of Technology in Computer Science</h4>
+            <h4>Bachelor of Technology</h4>
             <p>
-                Currently a senior at IIT Jodhpur.
+                <h5>Major: Computer Science and Engineering</h5>
+                <h5>Courses Taken</h5>
+                <ul id="coursesList"></ul>
+                <h5>Co-Curricular: Secretary of the Music Society, Head of Cult-Fest Ignus</h5>
             </p>
         </div>
         <!-- End .education-block -->
@@ -149,7 +217,7 @@
                     2nd in All-India KVS in AISSE 2018.
                 </li>
                 <li>
-                    Aired on national telivision (DD Loksabha) for a quiz.
+                    Aired on national television (DD Loksabha) for a quiz.
                 </li>
                 <!-- <li>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -168,7 +236,7 @@
                 <div class="project shadow-large">
                     <div class="project-container">
                         <div class="project-image">
-                            <img src="images/project.jpg" height="300" width="350"/>
+                            <img src="images\projectManagement.png" height="300" width="350"/>
                         </div>
                         <!-- End .project-image -->
                         <div class="project-info">
@@ -199,7 +267,7 @@
                 <div class="project shadow-large">
                     <div class="project-container">
                         <div class="project-image">
-                            <img src="https://3.bp.blogspot.com/-sJ-R3lx0vr0/XI_Dqe9wnKI/AAAAAAAAD6U/dvy-MISJagUPDDfcoLUQQTIeSAUkqKlawCEwYBhgL/s1600/image1.png" height="300" width="350"/>
+                            <img src="https://3.bp.blogspot.com/-sJ-R3lx0vr0/XI_Dqe9wnKI/AAAAAAAAD6U/dvy-MISJagUPDDfcoLUQQTIeSAUkqKlawCEwYBhgL/s1600/image1.png" width="350" height="231.2"/>
                         </div>
                         <!-- End .project-image -->
                         <div class="project-info">
@@ -357,7 +425,7 @@
     <div id="contact">
         <h2>Get in Touch</h2>
         <div id="contact-form">
-            <form method="POST" action="mailto:emailid@example.com">
+            <form method="POST" action="mailto:sawanp67@gmail.com">
                 <input type="hidden" name="_subject" value="Contact request from personal website" />
                 <input type="email" name="_replyto" placeholder="Your email" required>
                 <textarea name="message" placeholder="Your message" required></textarea>
